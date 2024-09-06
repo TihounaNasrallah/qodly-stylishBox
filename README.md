@@ -4,7 +4,7 @@
 
 # Stylish-Box Component
 
-![Component](https://github.com/TihounaNasrallah/qodly-stylishbox/assets/73143827/bc458122-f156-4c32-91b3-e4e12eb61801)
+![StylishBox Component](public/StylishBox.png)
 
 ## Properties
 
