@@ -62,10 +62,15 @@ const StylishBox: FC<IStylishBoxProps> = ({ parameters, className, classNames = 
   return (
     <div
       ref={connect}
-      style={{ width: '100%', ...transformedObject }}
+      style={{ width: '100%', height: '100%', ...transformedObject }}
       className={cn(className, classNames)}
     >
-      <Element id="container" style={transformedObject} is={resolver.StyleBox} canvas />
+      <Element
+        id="container"
+        style={{ ...transformedObject, width: '100%', height: '100%' }}
+        is={resolver.StyleBox}
+        canvas
+      />
     </div>
   );
 };

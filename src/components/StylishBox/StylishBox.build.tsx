@@ -21,7 +21,11 @@ const StylishBox: FC<IStylishBoxProps> = ({ parameters, className, classNames = 
   const style = transformedObject as CSSProperties;
 
   return (
-    <div ref={connect} style={style} className={(cn(className, classNames), 'p-2')}>
+    <div
+      ref={connect}
+      style={{ ...style, width: '100%' }}
+      className={(cn(className, classNames), 'p-2')}
+    >
       <Element id="container" is={resolver.StyleBox} canvas />
     </div>
   );
