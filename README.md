@@ -17,7 +17,7 @@
 
 ## How it works
 
-### Steps:
+### Steps :
 
 1. Drag and Drop the StylishBox component inside your page.
 2. Add the Parameters property.
@@ -29,3 +29,19 @@
      background-color: var(--BgColor);
    }
    ```
+
+### Examples :
+
+#### - Example 1
+
+In this example we used a stylishbox inside a matrix to customize the border colors of the cells depending on the color attribute of each entity.
+
+![StylishBox applied to border colors](public/Example1.png)
+
+#### - Example 2
+
+In this example we used a stylishbox inside a table to apply different background colors or font colors to the cells depending on the status attribute of each entity.
+
+![StylishBox applied to background colors](public/Example2.png)
+
+![StylishBox applied to font colors](public/Example3.png)
