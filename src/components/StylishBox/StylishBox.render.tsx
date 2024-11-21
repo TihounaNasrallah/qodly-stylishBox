@@ -1,4 +1,10 @@
-import { selectResolver, useEnhancedEditor, useRenderer, useSources } from '@ws-ui/webform-editor';
+import {
+  selectResolver,
+  useEnhancedEditor,
+  useEntity,
+  useRenderer,
+  useSources,
+} from '@ws-ui/webform-editor';
 import cn from 'classnames';
 import { CSSProperties, FC, useCallback, useEffect, useState } from 'react';
 import { Element } from '@ws-ui/craftjs-core';
@@ -11,6 +17,8 @@ const StylishBox: FC<IStylishBoxProps> = ({ parameters, className, classNames = 
   const {
     actions: { getDatasource },
   } = useSources();
+
+  const entity = useEntity();
 
   const processArray = useCallback(
     async (arr: IParameters[]): Promise<void> => {
@@ -53,7 +61,7 @@ const StylishBox: FC<IStylishBoxProps> = ({ parameters, className, classNames = 
         }
       });
     };
-  }, [parameters]);
+  }, [parameters, entity]);
 
   return (
     <div
